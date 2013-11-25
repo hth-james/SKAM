@@ -10,6 +10,8 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from SKAM_Model import *
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -36,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'SKAM_Model',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,8 +60,11 @@ WSGI_APPLICATION = 'SKAM_Web.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+	'NAME' : 'SKAM',
+	'USER' : 'skam',
+	'PASSWORD' : 'Sc0reKeeper',
+	'HOST' : 'localhost',
     }
 }
 

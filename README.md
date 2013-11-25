@@ -34,8 +34,9 @@ Requirements
 ======================
 The following requirement must be met for this applcation to function correctly
 	[+] Python must be installed
-	[+] Ruby must be installed
 	[+] Must be run on a linux/unix based machine
 	[+] An APACHE server must be configured
+	[+] An MYSQL server must be installed
+	[+] Default MYSQL login is SKAM identified by Sc0reKeeper3 this log 		in can be changed
 
 
